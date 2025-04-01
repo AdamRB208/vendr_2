@@ -8,11 +8,15 @@ export class VendingController {
   }
 
   addQuarter() {
+    console.log('added quarter!')
     moneyService.addQuarter()
+    console.log(AppState.money)
+
   }
 
   drawMoney() {
-    const moneyAsCurrency = new Intl.NumberFormat('en-us', { style: 'currency', currency: 'USD' }).format(AppState.money)
-    // setText('total-money', moneyAsCurrency)
+    const coins = AppState.money
+    const totalMoneyElem = document.getElementById('total-money')
+    totalMoneyElem.innerHTML = `money: $${AppState.money.toFixed(2)}`
   }
 }
