@@ -8,4 +8,4 @@ class MoneyService {
 
 }
 
-export consts moneyService = new MoneyService()
+export const moneyService = new MoneyService()
