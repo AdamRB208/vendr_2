@@ -13,10 +13,11 @@ export class Snack {
     return /*html*/ `
     <div class="col 4">
       <div></div>
-        <img class="item-img" src=""
+        <img class="item-img" src="${this.imgUrl}"
       alt="image of vending machine items">
-        <span>item name</span>
-        <div><button class="mt-2 mb-3 p-1">$.25</button></div>
+        <div class="text-light">${this.name}</div>
+        <div class="text-light">$${this.price}</div>
+        <div><button class="mt-2 mb-3 p-1 rounded">$.25</button></div>
       </div>
     `
   }
