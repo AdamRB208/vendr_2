@@ -19,4 +19,10 @@ export class VendingController {
     const totalMoneyElem = document.getElementById('total-money')
     totalMoneyElem.innerHTML = `money: $${AppState.money.toFixed(2)}`
   }
+
+  purchaseSnack(snackName) {
+    console.log('purchases snack')
+    moneyService.buySnack(snackName)
+    console.log(AppState.money)
+  }
 }
