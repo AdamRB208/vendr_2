@@ -7,8 +7,8 @@ class MoneyService {
   }
 
   buySnack(snackName) {
-    console.log('buying snack')
-    const snackToBuy = AppState.snacks.find(snack => snack.name.price == snackName)
+    console.log('buying snack', snackName)
+    const snackToBuy = AppState.snacks.find(snack => snack.name == snackName)
     if (AppState.money < snackToBuy.price) {
       return
     }

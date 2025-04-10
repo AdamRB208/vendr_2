@@ -21,7 +21,7 @@ export class VendingController {
   }
 
   purchaseSnack(snackName) {
-    console.log('purchases snack')
+    console.log('purchases snack', snackName)
     moneyService.buySnack(snackName)
     console.log(AppState.money)
   }

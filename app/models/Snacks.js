@@ -17,7 +17,7 @@ export class Snack {
       alt="image of vending machine items">
         <div class="text-light">${this.name}</div>
         <div class="text-light">$${this.price}</div>
-        <div><button onclick="app.VendingController.purchaseSnack()" class="mt-2 mb-3 p-1 rounded">Buy ${this.name}</button></div>
+        <div><button onclick="app.VendingController.purchaseSnack('${this.name}')" class="mt-2 mb-3 p-1 rounded">Buy ${this.name}</button></div>
       </div>
     `
   }
