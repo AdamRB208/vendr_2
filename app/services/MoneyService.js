@@ -14,7 +14,6 @@ class MoneyService {
     }
     AppState.money -= snackToBuy.price
     snackToBuy.quantity++
-
   }
 }
 

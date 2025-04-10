@@ -14,7 +14,7 @@ class ObservableAppState extends EventEmitter {
 
     new Snack({
       name: 'Chips',
-      price: 2.00,
+      price: 1.75,
       imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuGIuA2mnczTIfqxaT-xEB_FArlVZEDC1NaQ&s',
       quantity: 0,
     }),
@@ -42,7 +42,7 @@ class ObservableAppState extends EventEmitter {
 
     new Snack({
       name: 'TrailMix',
-      price: 3.00,
+      price: 2.50,
       imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-NnYYrFaGS2Iwp8oNEn_jhHTYJ35TlHRSmQ&s',
       quantity: 0,
     }),
